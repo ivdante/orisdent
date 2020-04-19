@@ -49,6 +49,7 @@ $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
+    "base":       $base,
     "blue":       $blue,
     "indigo":     $indigo,
     "purple":     $purple,
@@ -66,6 +67,7 @@ $colors: map-merge(
   $colors
 );
 
+$base:          $base !default;
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -79,6 +81,7 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
+    "base":       $base,
     "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
@@ -1139,5 +1142,5 @@ $positions: static, relative, absolute, fixed, sticky !default;
 
 // Printing
 
-$print-page-size:                   a3 !default;
+$print-page-size:                   a4 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
