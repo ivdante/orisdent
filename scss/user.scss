@@ -84,6 +84,11 @@ main > .container {
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
+@media (max-width: 768px){
+  .featurette-divider {
+    margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+  }
+}
 
 /* Thin out the marketing headings */
 .featurette-heading {
