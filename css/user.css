@@ -3,6 +3,10 @@ body {
   min-width: 320px;
 }
 
+header {
+  margin-bottom: 57px;
+}
+
 main > .container {
   padding: 40px 15px 0;
 }
