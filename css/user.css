@@ -86,6 +86,10 @@ code {
   padding-bottom: 0.5em;
 }
 
+.media > img {
+  margin: -20px;
+}
+
 /* Featurettes
 ------------------------- */
 .featurette-divider {
