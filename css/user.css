@@ -71,7 +71,7 @@ code {
   user-select: none;
 }
 
-.news-img {
+.img-cover {
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
