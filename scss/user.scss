@@ -61,6 +61,11 @@ main > .container {
     user-select: none;
   }
 
+  .news-img {
+    min-width: 100%;
+    object-fit: cover;
+  }
+
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
