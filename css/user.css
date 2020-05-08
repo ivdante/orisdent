@@ -78,7 +78,7 @@ code {
   @include object-fit(cover, top);
   */
 .img-cover {
-  min-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   font-family: 'object-fit: cover;';
