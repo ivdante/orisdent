@@ -71,10 +71,17 @@ code {
   user-select: none;
 }
 
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+  */
 .img-cover {
   min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  font-family: 'object-fit: cover;';
 }
 
 @media (min-width: 768px) {
