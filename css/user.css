@@ -103,6 +103,41 @@ code {
   margin: -10px;
 }
 
+.close {
+  /*position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 4px solid #e62f57;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;*/
+  cursor: pointer;
+  float: right;
+}
+
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  /*top: 21px;
+  left: 10px;*/
+  width: 32px;
+  height: 3px;
+  background: white;
+}
+
+.close:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.close:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 /* Featurettes
 ------------------------- */
 .featurette-divider {

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ОРИС Стоматология / Врачи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/bootstrap-reboot.css"> -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap-grid.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/user.css">
+    <meta name="theme-color" content="#000048">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-base">
+            <div class="container-xl d-flex">
+                <a class="navbar-brand mb-0 h1" href="#">ОРИС Стоматология</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clinic.html">О клинике</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="doctors.html">Врачи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+74952287788">+7 (495) 228 77 88</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white pl-0 border-bottom">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Врачи</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container doctors">
+
+            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Launch demo modal
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 650px;">
+                    <div class="modal-content p-5 bg-base text-light">
+                        <div class="modal-body">
+                            <div aria-hidden="true" class="close mb-3 align-right" data-dismiss="modal" aria-label="Close"></div>
+                            <h1 class="modal-title text-center mb-5" id="exampleModalCenterTitle">Записаться на приём</h1>
+
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationCustom01">Имя</label>
+                                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="telephone">Телефон</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend">+7</span>
+                                        </div>
+                                        <input type="text" maxlength="15" class="form-control" id="telephone" name="telephone" aria-describedby="inputGroupPrepend" required>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">Комментарий (не обязательно)</label>
+                                    <input type="text" class="form-control" id="validationCustom03">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                      Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pt-4">
+                                    <button class="btn btn-outline-light rounded-0 btn-lg btn-block" type="submit">Записаться</button>
+                                </div>
+                              </form>
+                        </div>
+                
+                    </div>
+                    </div>
+                </div>
+           
+                <script>
+                    
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                      'use strict';
+                      window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                          form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                              event.preventDefault();
+                              event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                          }, false);
+                        });
+                      }, false);
+                    })();
+                    </script>
+              
+        </div>
+    </main>
+
+    <footer class="footer mt-auto pb-0">
+        
+        <div class="container_fluid bg-base text-light py-3">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <div class="footer_logo">
+                        <img class="bd-placeholder-img" src="img/logo_sm.png" alt="" width="64" height="64">
+                        &copy; 2020 ОРИС.
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#" target="" rel="noopener noreferrer"><span
+                                        style="font-size: 24px; color: #ffffff" class="fab fa-instagram"></span></a>
+                            </li>
+                            <li class="list-inline-item"><a href="#" target="" rel="noopener noreferrer"><span
+                                        style="font-size: 24px; color: #ffffff" class="fab fa-whatsapp"></span></a></li>
+                            <li class="list-inline-item"><a href="#" target="" rel="noopener noreferrer"><span
+                                        style="font-size: 24px; color: #ffffff" class="fab fa-vk"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/user.js"></script>
+    
+</body>
+
+</html>
